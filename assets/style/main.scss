@@ -1,0 +1,26 @@
+//Страницы
+//@import './page/index.scss';
+
+//@import '../fonts/fonts.scss';
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/common.scss';
+
+@import 'base/reset';
+
+@import 'components/cards.scss';
+@import 'components/modal.scss';
+
+
+@import 'components/header.scss';
+@import 'components/main.scss';
+@import 'components/footer.scss';
+
+@import "base/mediarqst";
+
+
+//@import 'components/burger/burger.scss';
+
+
+

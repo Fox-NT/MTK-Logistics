@@ -1,0 +1,125 @@
+.cards {
+  @include flex(row, center, stretch);
+  flex-wrap: wrap;
+  .card {
+    max-width: 630px;
+    width: 100%;
+    padding: 54.7px 45px 55px 55.5px;
+    background-color: $background-grey-3;
+    border-radius: 17px;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    //margin: 10px;
+    @include flex(column, space-between, flex-start);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &__title {
+      //max-width: 258px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 28px;
+      color: $text-black-2;
+      margin-bottom: 33.8px;
+    }
+
+    &__detail {
+      font-size: 17px;
+      line-height: 21px;
+      color: $text-black-2;
+      margin-bottom: 19.7px;
+      @include aft() {
+        margin-left: 10px;
+        position: relative;
+        top: 0;
+        width: 8px;
+        height: 8px;
+        background-image: url("../img/arrow_down-black.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--btn {
+      font-size: 17px;
+      line-height: 21px;
+      font-weight: 600;
+      color: $text-main-blue;
+      position: relative;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      @include bef() {
+        width: 100%;
+        height: 1px;
+        background-color: $background-main-blue;
+        position: absolute;
+        bottom: -4px;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      right: 45px;
+      bottom: 55px;
+    }
+    &.card-2 {
+      .card__title {
+        //max-width: 285px;
+      }
+      .card__img {
+        right: 48.6px;
+        bottom: 63.3px;
+      }
+    }
+    &.card-3 {
+      .card__title {
+        //max-width: 330px;
+      }
+      .card__img {
+        right: 60.7px;
+        bottom: 50px;
+      }
+    }
+    &.card-4 {
+      .card__title {
+        //max-width: 305px;
+      }
+      .card__img {
+        right: 63.2px;
+        bottom: 49.2px;
+      }
+    }
+    &.card-5 {
+      .card__title {
+        //max-width: 172px;
+      }
+      .card__img {
+        right: 66.2px;
+        bottom: 60px;
+      }
+    }
+    &.card-light {
+      background-color: $background-white;
+      border: 2px solid $border-grey-3;
+      padding-right: 54px;
+      .card__title {
+        margin-bottom: 16.3px;
+      }
+      .card__footer {
+        @include flex(row, space-between, center);
+        width: 100%;
+      }
+      .card__descr {
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 500;
+        color: $text-black-1;
+        max-width: 275px;
+        width: 100%;
+      }
+    }
+  }
+}

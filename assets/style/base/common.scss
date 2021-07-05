@@ -1,0 +1,19 @@
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.overflow--block {
+  overflow-y: hidden;
+}
+
+.overflow--unblock {
+  overflow-y: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.grecaptcha-badge {display: none;}

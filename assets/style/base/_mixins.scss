@@ -1,0 +1,57 @@
+@mixin bef() {
+    &::before {
+      content: "";
+  
+      display: inline-block;
+      @content;
+    }
+  }
+  
+  @mixin aft() {
+    &::after {
+      content: "";
+  
+      display: inline-block;
+      @content;
+    }
+  }
+  
+  @mixin clear() {
+    content: '';
+  
+    display: table;
+    overflow: hidden;
+    clear: both;
+  }
+  
+  @mixin full-block() {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  }
+  
+  @mixin fixed-block() {
+    position: fixed;
+    right: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  }
+  
+  @mixin hover() {
+    &:hover {
+      @media screen and (min-width: 1200px) {
+        @content;
+      }
+    }
+  }
+  @mixin flex($pos : row, $jc : flex-start, $ai : flex-start) {
+    display: flex;
+    flex-direction: $pos;
+    justify-content: $jc;
+    align-items: $ai;
+  }

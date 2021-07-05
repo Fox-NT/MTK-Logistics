@@ -1,0 +1,94 @@
+.footer {
+
+  background: url("../img/bg-calc.png"),
+  $background-dark-blue;
+  padding: 102px 0 65px 0;
+
+  background-repeat: no-repeat;
+  background-position: left top;
+  &__wrapper {
+    @include flex(row, space-between, center);
+    margin-bottom: 104px;
+  }
+
+  &__documents {
+    align-self: flex-start;
+  }
+  &__logo {
+    margin-bottom: 38px;
+  }
+  .download__block {
+    color: $text-white;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .requisites {
+    margin-bottom: 11px;
+  }
+  .download-link {
+    color: $text-main-blue;
+  }
+  .footer__info {
+    font-size: 13px;
+    line-height: 18px;
+    color: $text-white;
+    text-align: center;
+    max-width: 496px;
+    width: 100%;
+    font-weight: 400;
+  }
+  .footer__text{
+    display: block;
+  }
+
+  .footer__first-paragraph {
+    margin-bottom: 20px;
+  }
+
+  .footer__second-paragraph {
+    text-transform: uppercase;
+  }
+  .contacts {
+    color: $text-white;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    &__phone {
+      @include flex(row, flex-start, center);
+      margin-bottom: 20px;
+      @include bef() {
+        width: 18px;
+        height: 18px;
+        content: url("../img/phone.svg");
+        margin-right: 18px;
+      }
+    }
+    &__email {
+      @include flex(row, flex-start, center);
+      margin-bottom: 20px;
+      @include bef() {
+        width: 20px;
+        height: 16px;
+        content: url("../img/email.svg");
+        margin-right: 16px;
+      }
+    }
+    &__address {
+      @include flex(row, flex-start, center);
+      @include bef() {
+        width: 20px;
+        height: 16px;
+        content: url("../img/adress.svg");
+        margin-right: 18px;
+      }
+    }
+  }
+  &__copyright {
+    @include flex(row, space-between, center);
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #7C8696;
+  }
+}

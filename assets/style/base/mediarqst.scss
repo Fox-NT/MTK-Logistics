@@ -1,0 +1,990 @@
+@media screen and (max-width: 1300px) {
+  header {
+    .header {
+      background-position: 310px;
+      &__logo {
+        padding-left: 25px;
+      }
+      .contacts {
+        padding-right: 25px;
+        &.mobile-contacts {
+          display: none;
+        }
+      }
+
+      .cargo {
+        padding: 0 25px;
+        padding-top: 100px;
+      }
+
+      .feedback {
+        padding: 36px 34px 34px 41px;
+      }
+    }
+  }
+  main {
+    .about {
+      padding-top: 195px;
+      padding-left: 25px;
+      padding-right: 25px;
+      &__descr {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 127px;
+      }
+      &__for-you {
+        margin-bottom: 79.8px;
+      }
+      .card {
+        margin-right: 0px;
+      }
+    }
+    .calculator {
+      &__wrapper {
+        padding: 0 25px;
+      }
+    }
+    .reviews {
+      &__body {
+      }
+      &__btn {
+        justify-content: center;
+      }
+      &__title {
+        padding: 0 25px;
+        justify-content: space-between;
+        .reviews__add-btn {
+          margin-left: 0;
+        }
+      }
+      &__list {
+        &--column {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .review {
+          margin-right: 0;
+          margin-bottom: 15px;
+          &:nth-child(n+3) {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footer__wrapper {
+      padding: 0 25px;
+    }
+    .footer__copyright {
+      padding: 0 25px;
+    }
+  }
+}
+@media screen and (max-width: 1260px) {
+  header {
+    .header {
+      background-position: 310px;
+      &__logo {
+        padding-left: 25px;
+      }
+      .contacts {
+        padding-right: 25px;
+        &.mobile-contacts {
+          display: none;
+        }
+      }
+
+      .cargo {
+        padding: 0 25px;
+        padding-top: 100px;
+      }
+
+      .feedback {
+        padding: 36px 34px 34px 41px;
+      }
+    }
+  }
+  main {
+    .advantages {
+      .card {
+        margin-right: 0px;
+
+      }
+    }
+    .calculator {
+      padding-bottom: 100px;
+      &__head {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      &__title {
+        margin-bottom: 25px;
+      }
+      &__body {
+        margin-bottom: 50px;
+        form {
+          flex-direction: column;
+        }
+      }
+      .checkbox-field {
+        margin-bottom: 50px;
+        .first-column {
+          margin-left: 40px;
+        }
+        .second-column {
+          margin-left: 20px;
+        }
+      }
+      &__footer {
+        flex-direction: column;
+        .service-cost {
+          margin-bottom: 25px;
+        }
+      }
+    }
+    .working {
+      .steps {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: flex-start;
+        &__item {
+          &:nth-child(2n) {
+            &::after {
+              display: none;
+            }
+          }
+          &:nth-child(3n) {
+            &::after {
+              display: block;
+            }
+          }
+          &:nth-child(6) {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1132px) {
+  header {
+    .header {
+      background: url("../img/bg-header-tabs.png"),
+      $background-dark-blue;
+      background-position: right bottom 170px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-top: 30px;
+      &__wrapper {
+        flex-wrap: wrap;
+      }
+      &__logo {
+        margin-bottom: 30px;
+      }
+      .mobile-contacts {
+        display: none;
+      }
+      .menu {
+        width: 100%;
+        order: 3;
+        padding: 21.5px 70px;
+        background-color: rgba(50, 132, 255, 0.15);
+        .nav__link {
+          color: $text-light-grey;
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+      .contacts {
+        @include flex(row, flex-end, center);
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 30px;
+        &__phone {
+          margin-bottom: 0;
+          margin-right: 53px;
+          &::before {
+            margin-right: 15px;
+          }
+        }
+        &__email {
+          margin-bottom: 0;
+          &::before {
+            margin-right: 15px;
+          }
+        }
+      }
+      .cargo {
+        padding-top: 152px;
+        padding-bottom: 400px;
+        &__title {
+          font-size: 60px;
+          line-height: 73px;
+          margin-bottom: 20.9px;
+        }
+        &__descr {
+          font-size: 17px;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+      }
+      .feedback {
+        flex-direction: column;
+        border-radius: 0;
+        &__text {
+          text-align: center;
+          margin-bottom: 24.6px;
+        }
+        &__field {
+          input {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .about {
+      padding-bottom: 160px;
+      .cards {
+        margin-bottom: 70px;
+        .card {
+          max-width: 351.5px;
+          padding: 41.7px 20px 40px 45.5px;
+          margin-right: 15px;
+          margin-bottom: 15px;
+
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+            &.card-1 {
+            .card__img {
+              max-width: 120px;
+              right: 16.5px;
+              bottom: 20px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          &.card-2 {
+            .card__img {
+              max-width: 120px;
+              right: 20px;
+              bottom: 28px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+
+          &.card-3 {
+            .card__img {
+              max-width: 100px;
+              right: 32.7px;
+              bottom: 23px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+
+          &.card-4 {
+            .card__img {
+              max-width: 95px;
+              right: 30px;
+              bottom: 15px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          &.card-5 {
+            .card__img {
+              max-width: 115px;
+              right: 30px;
+              bottom: 23px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          &.card-light {
+            .card__title {
+              font-size: 17px;
+              line-height: 24px;
+              margin-bottom: 14px;
+            }
+            .card__descr {
+              font-size: 15px;
+              line-height: 21px;
+              margin-bottom: 18.8px;
+            }
+            .card__footer {
+              flex-direction: column;
+              align-items: flex-start;
+              order: 2;
+            }
+            padding: 44.8px 21.9px 42px 29px;
+          }
+        }
+      }
+      &__footer {
+        font-size: 18px;
+        line-height: 25px;
+        padding: 0 25px;
+      }
+    }
+    .autopark {
+      background: url("../img/bg-autopark-tabs.png"),
+      $background-dark-blue;
+      padding: 100px 0;
+
+      background-repeat: no-repeat;
+      background-position: right -50px top -70px;
+      &__wrapper {
+        align-items: flex-start;
+        padding: 0 25px;
+      }
+      &__descr {
+        font-size: 15px;
+        line-height: 21px;
+      }
+
+      &__item {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 19px;
+      }
+    }
+    .advantages {
+      padding: 170px 0;
+      &__cards {
+        padding: 0 15px;
+        margin-bottom: 55px;
+      }
+      .card {
+        max-width: 351px;
+        margin: 7.5px;
+        &:nth-child(2n) {
+          margin-right: 7.5px;
+        }
+        //margin-bottom: 15px;
+        align-items: center;
+        text-align: center;
+        padding: 41px 19px;
+        justify-content: flex-start;
+        &__img {
+          margin-bottom: 20px;
+        }
+        &.card-1 {
+          .card__img {
+            width: 100px;
+            img {
+              width: 100%
+            }
+          }
+        }
+        &.card-2 {
+          .card__img {
+            width: 120px;
+            img {
+              width: 100%
+            }
+          }
+        }
+        &.card-3 {
+          .card__img {
+            width: 100px;
+            img {
+              width: 100%
+            }
+          }
+        }
+        &.card-4 {
+          .card__img {
+            width: 85px;
+            img {
+              width: 100%
+            }
+          }
+        }
+        &__title {
+          order: 1;
+        }
+
+        &__img {
+          position: static;
+        }
+        //&:nth-last-child(3n) {
+        //  margin-right: 0;
+        //}
+      }
+      &__descr {
+        padding: 0 25px;
+        margin-bottom: 70px;
+      }
+    }
+    .help {
+      .feedback {
+        flex-direction: column;
+        text-align: center;
+        padding: 36px 34px 34px 41px;
+        &__text {
+          margin-bottom: 25px;
+        }
+        &__field {
+          input, input:nth-last-child(1) {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1088px) {
+  footer {
+    .footer__wrapper {
+      flex-wrap: wrap;
+    }
+    .footer__documents {
+      margin-bottom: 82px;
+    }
+    .footer__contacts {
+      margin-bottom: 89px;
+      .contacts__address {
+        &::before {
+          margin-right: 15px;
+        }
+      }
+    }
+    .footer__info {
+      order: 3;
+      margin: 0 auto;
+    }
+    .footer__copyright {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .copyright {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    .header {
+      .menu {
+        .nav__item {
+          margin-right: 20px;
+        }
+      }
+
+      .mobile-contacts {
+        display: none;
+      }
+    }
+  }
+  main {
+    .about {
+      .cards {
+        .card {
+          margin-right: 0;
+        }
+      }
+    }
+    .advantages {
+      .card {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  main {
+    .working {
+      padding: 135px 0 0;
+      .steps {
+        flex-direction: column;
+        align-items: flex-start;
+        width: max-content;
+        &__item {
+          &::after {
+            display: none;
+          }
+          &:nth-child(3n) {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 680px) {
+  header {
+    .header {
+      background: url("../img/bg-header-mobile.png"),
+      $background-dark-blue;
+      //background-position: right bottom 190px;
+      background-position: right bottom 350px;
+      background-size: auto;
+      background-repeat: no-repeat;
+      &__wrapper {
+        //margin-bottom: 78px;
+        margin-bottom: 0;
+      }
+      &__logo {
+        margin-bottom: 0;
+        padding-left: 15px;
+      }
+      .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #2E2E2E;
+        opacity: 0.97;
+        padding: 0;
+        transform: translateX(100%);
+        .nav {
+          padding: 0 0 63px 0;
+          &__list {
+            @include flex(column, flex-start, flex-start);
+            padding: 125px 0 0 0;
+          }
+          &__item {
+            padding: 10.5px 10px 13.5px 65px;
+            margin-right: 0;
+            width: 100%;
+            &:hover {
+              background-color: $background-main-blue;
+            }
+            &:hover a {
+              color: $text-black-2;
+            }
+          }
+        }
+      }
+      .contacts {
+        display: none;
+        &.mobile-contacts {
+          display: block;
+        }
+      }
+      .mobile-contacts {
+        padding-left: 15px;
+        .contacts__phone {
+          margin-bottom: 13px;
+        }
+      }
+      .mobile-burger {
+        display: block;
+      }
+      .cargo {
+        margin-bottom: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 276px;
+        &__title {
+          font-size: 32px;
+          line-height: 39px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        &__descr {
+          font-size: 15px;
+          line-height: 21px;
+          text-align: center;
+          margin: 0 auto;
+          margin-bottom: 30.5px;
+        }
+
+        &__list {
+          flex-direction: column;
+          margin-bottom: 30px;
+        }
+        &__item {
+          flex-direction: column;
+          margin-bottom: 12.7px;
+          font-size: 15px;
+          line-height: 18px;
+          &::before {
+            margin-right: 0;
+            margin-bottom: 12.7px;
+          }
+          &:nth-child(1) {
+            &::before {
+              display: none;
+            }
+          }
+        }
+        &__calc-btn {
+          .cargo__btn {
+            margin: 0 auto;
+            padding: 17px 56px 15px 56px;
+            font-size: 15px;
+            line-height: 18px;
+          }
+        }
+      }
+      .feedback {
+        padding: 60px 31px 60px 41px;
+        form {
+          flex-direction: column;
+        }
+        &__field {
+          flex-direction: column;
+          input {
+            margin-right: 0;
+            &:nth-child(1) {
+              margin-bottom: 15px;
+            }
+            &:nth-last-child(1) {
+              margin-right: 0;
+              margin-bottom: 29px;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    .about {
+      padding: 135px 0;
+      &__descr {
+        font-size: 15px;
+        line-height: 21px;
+        padding: 0 15px;
+        margin-bottom: 135px;
+      }
+      &__for-you {
+        padding: 0 15px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 60px;
+      }
+      &__footer {
+        padding: 0 15px;
+      }
+      .cards {
+        margin-bottom: 70px;
+        .card {
+          padding: 30px 15px 30px 15px;
+          margin-right: 0;
+          margin-bottom: 15px;
+          align-items: center;
+          text-align: center;
+          border-radius: 0;
+          &__title {
+            order: 1;
+          }
+          &__detail {
+            order: 2;
+          }
+          &__btn {
+            order: 3;
+          }
+          &__img {
+            order: 0;
+            position: static;
+            margin-bottom: 15px;
+          }
+          &.card-light {
+            margin-right: 15px;
+            margin-left: 15px;
+            border-radius: 17px;
+            margin-bottom: 0;
+            .card__btn {
+              margin: 0 auto;
+            }
+            .card__title {
+              font-size: 17px;
+              line-height: 24px;
+            }
+            .card__descr {
+              font-size: 15px;
+              line-height: 21px;
+            }
+            padding: 44.8px 21.9px 42px 29px;
+          }
+        }
+      }
+    }
+    .autopark {
+      background: url("../img/bg-autopark-mobile.png"),
+      $background-dark-blue;
+      padding: 71px 0 277px 0;
+
+      background-repeat: no-repeat;
+      background-position: right 50px bottom -50px;
+      &__wrapper {
+        padding: 0 57px;
+        align-items: center;
+        text-align: center;
+      }
+      &__title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+      }
+      &__descr {
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 49px;
+      }
+      &__lists {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+      &__item {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 18px;
+        &:nth-last-child(1) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .advantages {
+      padding: 135px 0 0 0;
+      &__title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 60px;
+      }
+      .cards {
+        padding: 0;
+        margin-bottom: 70px;
+      }
+      .card {
+        border-radius: 0;
+        padding: 46px 15px;
+        margin: 0 0 25px 0;
+        &:nth-child(2n) {
+          margin: 0 0 25px 0;
+        }
+        &.card-4 {
+          margin-bottom: 0;
+        }
+        &__title {
+          font-size: 17px;
+          line-height: 24px;
+        }
+      }
+      &__descr {
+        padding: 0 15px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 70px;
+      }
+      &__info {
+        flex-direction: column;
+        padding: 35px 0;
+        padding-bottom: 70px;
+      }
+
+      .info-item {
+        padding: 35px 0;
+        border-right: none;
+        border-bottom: 2px solid #dcdcdc;
+      }
+    }
+    .calculator {
+      padding-top: 70px;
+      padding-bottom: 76px;
+      &__wrapper {
+        padding: 0 15px;
+      }
+      &__head {
+        margin-bottom: 56px;
+      }
+      &__title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+      }
+      &__descr {
+        font-size: 12px;
+        line-height: 17px;
+      }
+      &__body {
+          display: flex;
+          justify-content: center;
+        margin-bottom: 15px;
+        form {
+          .field {
+            flex-direction: column;
+            margin-bottom: 15px;
+            align-items: center;
+            .calculator__input {
+              margin-right: 0;
+              .first-input {
+                border-radius: 5px 5px 0 0;
+                margin-bottom: 15px;
+              }
+              .second-input {
+                border-radius: 0 0 5px 5px ;
+              }
+            }
+
+            input {
+              padding: 15px 13.6px 15px 28px;
+            }
+
+            button {
+              width: 100%;
+              border-radius: 0 0 5px 5px;
+              padding: 16px 56px;
+              font-size: 15px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+      .checkbox-field {
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 15px;
+        .first-column, .second-column {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+      .btn-swap {
+        bottom: 0;
+        right: 0;
+        top: 30px;
+        margin: auto;
+        transform: rotate(90deg);
+      }
+      &__footer {
+        text-align: center;
+        .service-cost {
+          margin-bottom: 20px;
+        }
+        .total-wrapper {
+          display: block;
+        }
+        .calculator__feedback--btn {
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+    .reviews {
+      padding: 70px 0;
+      &__title {
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 28px;
+        h2 {
+          margin-bottom: 10px;
+        }
+        padding: 0 10px;
+        margin-bottom: 64px;
+      }
+      &__btn {
+        margin-bottom: 20px;
+      }
+      &__list {
+        padding: 0 15px;
+        .review {
+          padding: 35.5px 40px 25px 44px;
+          &__text {
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+    .help {
+      padding: 135px 0 14px 0;
+      &__title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+      }
+      &__descr {
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 21px;
+        padding: 0 15px;
+      }
+      .feedback {
+        flex-direction: column;
+        padding: 60px 32px 60px 41px;
+        &__text {
+          margin-bottom: 20px;
+        }
+        form {
+          flex-direction: column;
+          padding: 0 10px;
+        }
+        &__field {
+          flex-direction: column;
+          input {
+            margin-right: 0;
+            margin-bottom:  15px;
+            &:nth-last-child(1) {
+              margin-bottom: 30px;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .partners {
+      &__list {
+        flex-direction: column;
+        padding: 49px 62px;
+      }
+      &__item {
+        margin-right: 0;
+        margin-bottom: 40px;
+        &:nth-last-child(1) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 70px 0;
+    .footer__wrapper {
+      flex-direction: column;
+      padding: 0 15px;
+      margin-bottom: 60px;
+    }
+    .footer__documents {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    .footer__info {
+      margin-bottom: 50px;
+    }
+    .footer__contacts {
+      margin: 0 auto;
+      order: 4;
+    }
+  }
+}
+@media screen and (max-width: 435px){
+  main {
+    .autopark {
+      background-position: center bottom -50px;
+    }
+  }
+}

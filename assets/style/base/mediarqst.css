@@ -1,0 +1,10 @@
+@media screen and (max-width: 1300px) {
+  .header__logo {
+    padding-left: 25px;
+  }
+  .header .contacts {
+    padding-right: 25px;
+  }
+}
+
+/*# sourceMappingURL=mediarqst.css.map */
